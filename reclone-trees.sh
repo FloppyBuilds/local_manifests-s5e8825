@@ -2,19 +2,15 @@
 set -e
 
 DEVICES=(
-  "a25x" "a33x" "a53x" "m33x" "m34x"
+  "a25x"
   "s5e8825-common"
 )
-XML="$(pwd)/.repo/local_manifests/s5e8825.xml"
-URL="https://github.com/exynos1280"
-[[ -z "$BRANCH" ]] && BRANCH="lineage-23.0"
-
-if [[ "$(whoami)" == "ksawlii" ]] || [[ "$(whoami)" == "maja"* ]]; then
-    URL="git@github.com:exynos1280"
-fi
+XML="$(pwd)/.repo/local_manifests/manifest.xml"
+URL="https://github.com/FloppyBuilds"
+[[ -z "$BRANCH" ]] && BRANCH="lineage-24.0"
 
 if [[ ! -f "$XML" ]]; then
-  echo "s5e8825.xml not found. Please execute from root dir."
+  echo "manifest.xml not found. Please execute from root dir."
   exit 1
 fi
 
