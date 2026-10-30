@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <remote name="github" fetch="https://github.com"/>
+    <remote name="lineage" fetch="https://github.com/LineageOS" revision="lineage-24.0"/>
+
+    <!-- Device trees -->
+    <project path="device/samsung/a25x" name="erd8825/android_device_samsung_a25x" remote="github" revision="lineage-24.0"/>
+    <project path="device/samsung/s5e8825-common" name="android_device_samsung_s5e8825-common" remote="lineage"/>
+    <project path="device/samsung_slsi/sepolicy" name="android_device_samsung_slsi_sepolicy" remote="lineage"/>
+
+    <!-- Vendor trees -->
+    <project path="vendor/samsung/a25x" name="erd8825/proprietary_vendor_samsung_a25x" remote="github" revision="lineage-24.0"/>
+    <project path="vendor/samsung/s5e8825-common" name="TheMuppets/proprietary_vendor_samsung_s5e8825-common" remote="github" revision="lineage-24.0"/>
+
+    <!-- HAL -->
+    <project path="hardware/samsung" name="android_hardware_samsung" remote="lineage"/>
+    <project path="hardware/samsung_slsi/libbt" name="android_hardware_samsung_slsi_libbt" remote="lineage"/>
+    <project path="hardware/samsung_slsi/nfc" name="android_hardware_samsung_slsi_nfc" remote="lineage"/>
+    <project path="hardware/samsung_slsi/scsc_wifibt/wifi_hal" name="android_hardware_samsung_slsi_scsc_wifibt_wifi_hal" remote="lineage"/>
+    <project path="hardware/samsung_slsi/scsc_wifibt/wpa_supplicant_lib" name="android_hardware_samsung_slsi_scsc_wifibt_wpa_supplicant_lib" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/codec2" name="android_hardware_samsung_slsi-linaro_codec2" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/config" name="android_hardware_samsung_slsi-linaro_config" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/exynos" name="android_hardware_samsung_slsi-linaro_exynos" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/exynos5" name="android_hardware_samsung_slsi-linaro_exynos5" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/graphics" name="android_hardware_samsung_slsi-linaro_graphics" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/interfaces" name="android_hardware_samsung_slsi-linaro_interfaces" remote="lineage"/>
+    <project path="hardware/samsung_slsi-linaro/openmax" name="android_hardware_samsung_slsi-linaro_openmax" remote="lineage"/>
+
+    <!-- Kernel -->
+    <project path="kernel/samsung/s5e8825" name="android_kernel_samsung_s5e8825" remote="lineage"/>
+</manifest>
